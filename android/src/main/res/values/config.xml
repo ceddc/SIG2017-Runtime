@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="config.data.sdcard.offline.dir">ArcGIS/samples/MapPackage</string>
+    <!--<string name="config.mmpk.name">logementssociaux</string>-->
+    <string name="config.mmpk.name">mobilemappackage_l</string>
+</resources>
