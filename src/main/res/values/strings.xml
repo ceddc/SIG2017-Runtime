@@ -1,9 +1,0 @@
-<resources>
-    <string name="app_name">MMPK Recherche et Routing</string>
-    <string name="chooseMap">Choix carte</string>
-    <string name="has_transport">Route activée</string>
-    <string name="no_transport">Route désactivée</string>
-    <string name="has_geotag">Geocode activé</string>
-    <string name="no_geotag">Geocode désactivé</string>
-    <string name="world_topo_service">http://services.arcgisonline.com/arcgis/rest/services/World_Topo_Map/MapServer</string>
-</resources>
