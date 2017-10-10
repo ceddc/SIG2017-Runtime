@@ -4,6 +4,7 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:esri="http://schemas.esri.com/arcgis/runtime/2013"
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
         xmlns:local="clr-namespace:dotnet_portal_3D_profil"
         mc:Ignorable="d"
         Title="MainWindow" Height="525" Width="790">
@@ -19,5 +20,20 @@
         </Grid.ColumnDefinitions>
         <esri:MapView x:Name="myMapView" Grid.Row="0" Grid.Column="0" />
         <esri:SceneView x:Name="mySceneView" Grid.Row="0" Grid.Column="1"/>
+        <lvc:CartesianChart Grid.Row="1" Grid.ColumnSpan="2">
+            <lvc:CartesianChart.AxisX>
+                <lvc:Axis Title="DIstance" LabelFormatter="{Binding XFormatter}"></lvc:Axis>
+            </lvc:CartesianChart.AxisX>
+            <lvc:CartesianChart.AxisY>
+                <lvc:Axis Title="Altitude" LabelFormatter="{Binding YFormatter}"></lvc:Axis>
+            </lvc:CartesianChart.AxisY>
+            <lvc:CartesianChart.Series>
+                <lvc:LineSeries Values="{Binding chartValues}" 
+                                PointGeometrySize="5" 
+                                PointForeground="White"
+                                Title="Altitude"
+                                />
+            </lvc:CartesianChart.Series>
+        </lvc:CartesianChart>
     </Grid>
 </Window>
