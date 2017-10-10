@@ -20,7 +20,9 @@
         </Grid.ColumnDefinitions>
         <esri:MapView x:Name="myMapView" Grid.Row="0" Grid.Column="0" />
         <esri:SceneView x:Name="mySceneView" Grid.Row="0" Grid.Column="1"/>
-        <lvc:CartesianChart Grid.Row="1" Grid.ColumnSpan="2">
+       
+        <TextBlock Grid.Row="1" Grid.ColumnSpan="2" TextAlignment="Center" Padding="5, 5, 0, 5" Foreground="#111" FontSize="12" Text="{Binding randoTitle}" />
+        <lvc:CartesianChart Grid.Row="1" Grid.ColumnSpan="2" Margin="0,15,0,0" DataClick="CartesianChart_DataClick">
             <lvc:CartesianChart.AxisX>
                 <lvc:Axis Title="DIstance" LabelFormatter="{Binding XFormatter}"></lvc:Axis>
             </lvc:CartesianChart.AxisX>
