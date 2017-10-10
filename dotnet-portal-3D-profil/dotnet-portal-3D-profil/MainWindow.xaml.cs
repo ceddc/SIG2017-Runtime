@@ -145,7 +145,7 @@ namespace dotnet_portal_3D_profil
                         // sauvegrde du point pour distance.
                         lastPoint = point;
                         // on ne prend pas tous les points.
-                        if (i%5 == 0)
+                        if (i%2 == 0)
                         {
                             double elevation = await sceneSurface.GetElevationAsync(point);
                             chartValues.Add(new ObservableChartMapPoint(Math.Round(distance,4), elevation, point));
