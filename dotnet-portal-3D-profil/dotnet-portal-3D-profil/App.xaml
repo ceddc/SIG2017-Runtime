@@ -1,0 +1,9 @@
+﻿<Application x:Class="dotnet_portal_3D_profil.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:dotnet_portal_3D_profil"
+             StartupUri="MainWindow.xaml">
+	<Application.Resources>
+         
+	</Application.Resources>
+</Application>
